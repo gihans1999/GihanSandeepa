@@ -1,0 +1,1183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navdiv ul {
+  list-style: none;
+}
+#navdiv ul li {
+  display: inline-block;
+  margin: 20px;
+  font-size: 20px;
+  color: white;
+}
+#navdiv ul li a {
+  text-decoration: none;
+  color: white;
+}
+#menudiv ul {
+  list-style: none;
+}
+#menudiv ul li {
+  display: inline-block;
+  margin: 20px;
+  font-size: 20px;
+  color: white;
+}
+#menudiv ul li a {
+  text-decoration: none;
+  color: white;
+}
+#navdiv {
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+
+nav h1::before {
+  content: "\2630";
+  font-size: 30px;
+  color: white;
+}
+nav h1 {
+  top: 0;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+#menudiv nav ul li {
+  display: block;
+}
+
+#menudiv {
+  position: absolute;
+  display: none;
+  z-index: 5;
+}
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+  #menudiv {
+    display: flex;
+  }
+}
+#backimg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 4;
+  box-shadow: 0px 0px 20px 2px rgb(17, 1, 89);
+}
+
+#backimg img {
+  position: absolute;
+}
+#dimg {
+  right: 0;
+  animation-name: dimg;
+  animation-duration: 1s;
+}
+#cimg {
+  right: 0;
+  animation-name: cimg;
+  animation-duration: 1.5s;
+}
+#aimg {
+  left: 0;
+  animation-name: aimg;
+  animation-duration: 1s;
+}
+#bimg {
+  left: 0;
+  animation-name: bimg;
+  animation-duration: 1.5s;
+}
+#meimg {
+  left: 30px;
+  animation-name: meimg;
+  animation-duration: 2s;
+}
+@keyframes dimg {
+  0% {
+    right: -200px;
+  }
+
+  100% {
+  }
+}
+@keyframes cimg {
+  0% {
+    right: -200px;
+  }
+
+  100% {
+  }
+}
+@keyframes aimg {
+  0% {
+    left: -200px;
+  }
+
+  100% {
+  }
+}
+
+@keyframes bimg {
+  0% {
+    left: -200px;
+  }
+
+  100% {
+  }
+}
+@keyframes meimg {
+  0% {
+    left: -200px;
+  }
+
+  100% {
+  }
+}
+
+#backgroundimg {
+  left: 0;
+}
+#deataildiv {
+  position: absolute;
+  right: 50px;
+  top: 200px;
+}
+#deataildiv a {
+  position: absolute;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(27, 252, 27);
+  padding: 10px;
+  border: 3px solid rgb(27, 252, 27);
+  border-radius: 5px;
+  background-color: rgba(24, 255, 36, 0.168);
+  right: 20px;
+  top: 300px;
+  animation-name: seemore;
+  animation-duration: 2s;
+}
+#deataildiv p {
+  position: absolute;
+  width: 300px;
+  color: white;
+  right: 0px;
+  text-align: justify;
+  animation-name: parah;
+  animation-duration: 2.5s;
+}
+#deataildiv ul li {
+  color: white;
+  animation-name: list;
+  animation-duration: 2s;
+}
+@keyframes list {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes parah {
+  0% {
+    right: -200px;
+  }
+
+  100% {
+  }
+}
+@keyframes seemore {
+  0% {
+    top: 500%;
+  }
+
+  100% {
+  }
+}
+#namediv {
+  position: absolute;
+  left: 10px;
+  top: 90%;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  animation-name: namediv;
+  animation-duration: 2.5s;
+}
+@keyframes namediv {
+  0% {
+    top: 100%;
+  }
+
+  100% {
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #deataildiv {
+    right: 30px;
+    top: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #deataildiv {
+    right: 30px;
+    top: 20px;
+  }
+  #deataildiv ul li {
+    font-size: 10px;
+  }
+  #meimg {
+    justify-content: center;
+    left: 50%;
+
+    transform: translate(-50%);
+  }
+  #namediv h1 {
+    font-size: 40px;
+  }
+  #deataildiv a {
+    top: 100px;
+  }
+}
+@media screen and (max-width: 745px) {
+  #deataildiv p {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 585px) {
+  #deataildiv p {
+    display: none;
+  }
+  #deataildiv a {
+    top: 100px;
+  }
+}
+
+#aboutdiv {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(5, 245, 5);
+  box-shadow: 0px 0px 20px 2px rgb(17, 1, 89);
+  z-index: 2;
+}
+
+#aboutcontainer {
+  position: absolute;
+  width: 95%;
+  height: 90%;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background-color: rgba(255, 255, 255, 0.456);
+  border-radius: 10px;
+  z-index: 4;
+}
+table {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100%;
+}
+th {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+}
+#tablediv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 375px) {
+  th {
+    font-size: 15px;
+  }
+  #aboutcontainer a {
+    padding: 5px 10px 5px 10px;
+    font-size: 10px;
+  }
+}
+
+#aboutcontainer a {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  border: 3px solid rgb(245, 225, 5);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 0, 0.429);
+  color: white;
+  font-weight: bold;
+}
+#qulificationdiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 200%;
+  background-color: #002140;
+  z-index: 1;
+}
+#qulificationdiv h2 {
+  position: absolute;
+  justify-content: center;
+  color: white;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#qulificationcontainer {
+  position: absolute;
+  width: 95%;
+  height: 83%;
+  left: 50%;
+  top: 90px;
+
+  transform: translate(-50%);
+
+  background-color: rgba(255, 255, 255, 0.456);
+  border-radius: 10px;
+}
+#qulificationcontainer h3 {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  left: 20px;
+  position: relative;
+}
+#clicktag {
+  position: absolute;
+  top: -40px;
+}
+#clicktag:hover {
+  cursor: pointer;
+}
+
+#alevelimg {
+  position: absolute;
+  padding: 20px;
+  height: 100%;
+  width: 500px;
+}
+
+#aleveltable {
+  position: absolute;
+  left: 500px;
+  height: 100%;
+  width: 40%;
+}
+#olevelimg {
+  position: absolute;
+  overflow: hidden;
+  padding: 10px;
+  padding: 20px;
+  height: 90%;
+  width: 500px;
+}
+#olevelimg img:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: cetimg1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+#olevelimg img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  animation-name: cetimg2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cetimg1 {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: -100%;
+    z-index: 3;
+  }
+  50.01% {
+    left: 100%;
+  }
+}
+@keyframes cetimg2 {
+  0% {
+    left: -100%;
+  }
+  0.01% {
+    left: 100%;
+  }
+
+  50% {
+    left: 0;
+  }
+}
+
+#oleveltable {
+  position: absolute;
+  left: 500px;
+  height: 90%;
+  width: 40%;
+}
+
+#alcet {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.433);
+  z-index: 20;
+}
+#alcet img {
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#olcet {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.433);
+  z-index: 20;
+}
+#olcet img {
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#olcet2 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.433);
+  z-index: 20;
+}
+#olcet2 img {
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 500px) {
+  #alcet img {
+    width: 400px;
+    height: 500px;
+  }
+  #olcet img {
+    width: 400px;
+    height: 500px;
+  }
+  #olcet2 img {
+    width: 400px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 380px) {
+  #alcet img {
+    width: 350px;
+    height: 450px;
+  }
+  #olcet img {
+    width: 350px;
+    height: 450px;
+  }
+  #olcet2 img {
+    width: 350px;
+    height: 450px;
+  }
+}
+#alcet label {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  z-index: 21;
+}
+#olcet label {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  z-index: 21;
+}
+#olcet2 label {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  z-index: 21;
+}
+
+#namediv {
+  position: absolute;
+  left: 10px;
+  top: 90%;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  animation-name: namediv;
+  animation-duration: 2.5s;
+}
+@keyframes namediv {
+  0% {
+    top: 100%;
+  }
+
+  100% {
+  }
+}
+
+#qulificationdiv2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 200%;
+  background-color: #002140;
+  z-index: 1;
+}
+#qulificationdiv2 h2 {
+  position: absolute;
+  justify-content: center;
+  color: white;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#qulificationcontainer2 {
+  position: absolute;
+  width: 95%;
+  height: 83%;
+  left: 50%;
+  top: 90px;
+
+  transform: translate(-50%);
+
+  background-color: rgba(255, 255, 255, 0.456);
+  border-radius: 10px;
+}
+#qulificationcontainer2 h3 {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  left: 20px;
+  position: relative;
+}
+#qulificationdiv3 {
+  position: absolute;
+  width: 100%;
+  height: 135%;
+  top: 200%;
+  background-color: #002140;
+  z-index: 1;
+}
+#qulificationdiv3 h2 {
+  position: absolute;
+  justify-content: center;
+  color: white;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#qulificationcontainer3 {
+  position: absolute;
+  width: 95%;
+  height: 85%;
+  left: 50%;
+  top: 90px;
+
+  transform: translate(-50%);
+
+  background-color: rgba(255, 255, 255, 0.456);
+  border-radius: 10px;
+}
+#qulificationcontainer3 h3 {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  left: 20px;
+  position: relative;
+}
+
+@media screen and (max-width: 860px) {
+  #qulificationcontainer {
+    height: 90%;
+  }
+  #qulificationdiv {
+    height: 200%;
+  }
+  #qulificationcontainer3 {
+    height: 93%;
+  }
+  #qulificationdiv3 {
+    height: 245%;
+  }
+  #aleveltable {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+  }
+  #alevelimg {
+    position: absolute;
+    padding: 20px;
+    height: 50%;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #oleveltable {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    height: 48%;
+    width: 100%;
+  }
+  #olevelimg {
+    position: absolute;
+    padding: 20px;
+    height: 40%;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 20px solid rgba(255, 255, 255, 0);
+  }
+}
+@media screen and (max-width: 525px) {
+  #alevelimg {
+    width: 100%;
+  }
+  #olevelimg {
+    width: 100%;
+  }
+}
+
+#olevel {
+  padding: 20px;
+  height: 80%;
+}
+#aboimgcotainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+#aboimgcotainer img {
+  position: absolute;
+}
+#rightone1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation-name: rightone1;
+  animation-duration: 1s;
+  display: none;
+}
+@keyframes rightone1 {
+  0% {
+    right: -200px;
+  }
+
+  100% {
+  }
+}
+#rightone2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation-name: rightone2;
+  animation-duration: 1.5s;
+  display: none;
+}
+@keyframes rightone2 {
+  0% {
+    right: -200px;
+  }
+
+  100% {
+  }
+}
+#rightone3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation-name: rightone3;
+  animation-duration: 2s;
+  display: none;
+}
+@keyframes rightone3 {
+  0% {
+    right: -200px;
+  }
+
+  100% {
+  }
+}
+#leftone1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation-name: leftone1;
+  animation-duration: 1s;
+  display: none;
+}
+@keyframes leftone1 {
+  0% {
+    left: -200px;
+  }
+
+  100% {
+  }
+}
+#leftone2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation-name: leftone2;
+  animation-duration: 1.5s;
+  display: none;
+}
+@keyframes leftone2 {
+  0% {
+    left: -200px;
+  }
+
+  100% {
+  }
+}
+
+#leftone3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation-name: leftone3;
+  animation-duration: 2s;
+  display: none;
+}
+@keyframes leftone3 {
+  0% {
+    left: -200px;
+  }
+
+  100% {
+  }
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  width: 20px;
+  height: 5px;
+  background: red;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  animation-name: underline1;
+  animation-duration: 1s;
+}
+
+@keyframes underline1 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+  }
+}
+
+#contactdiv {
+  position: absolute;
+  top: 300%;
+  width: 100%;
+
+  background-color: white;
+}
+#imagecontainer2 {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+
+  overflow: hidden;
+}
+#imagecontainer2 img {
+  position: absolute;
+}
+#leftimg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#rightimg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#contactdiv h1 {
+  position: absolute;
+  padding: 20px;
+  color: white;
+}
+#projectdiv {
+  position: absolute;
+  top: 250px;
+  z-index: 9;
+  width: 100%;
+
+  text-align: center;
+}
+
+#projectcontainer {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 2px rgb(152, 152, 153);
+  margin: 30px;
+}
+
+#projectimgdiv {
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+}
+
+#projectshedingsdiv {
+  text-align: left;
+  padding: 5px;
+}
+
+#projectspharadiv {
+  padding: 5px;
+  padding-top: 10px;
+  text-align: justify;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+#webdevodiv {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+#webdevodiv li {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#projectcontainer:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+#graphicdiv {
+  position: absolute;
+  top: 1200px;
+  left: 50px;
+}
+#graphicdiv li {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#grapdiv {
+  position: absolute;
+  top: 1250px;
+  z-index: 9;
+  width: 100%;
+
+  text-align: center;
+}
+
+#graphiccontainers {
+  width: 400px;
+  height: 700px;
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 2px rgb(152, 152, 153);
+  margin: 30px;
+}
+
+#grapimgcontainer {
+  width: 100%;
+  height: 70%;
+  padding: 20px;
+}
+
+#graphedingcontainer {
+  text-align: left;
+  padding: 5px;
+}
+
+#grapparacontainer {
+  padding: 5px;
+  padding-top: 10px;
+  text-align: justify;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+#graphiccontainers:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 925px) {
+  #graphicdiv {
+    top: 2150px;
+  }
+
+  #grapdiv {
+    top: 2200px;
+  }
+}
+@media screen and (max-width: 470px) {
+  #projectcontainer {
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+  }
+  #graphiccontainers {
+    width: 300px;
+    height: 650px;
+    margin: 10px;
+  }
+}
+#footerdiv {
+  position: absolute;
+  top: 2900px;
+  width: 100%;
+  height: 500px;
+  background-color: #002140;
+  z-index: 15;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+#contactformcontainer {
+  position: absolute;
+  left: 0;
+  width: 350px;
+  height: 500px;
+  padding: 20px 20px 20px 30px;
+}
+#contactformcontainer h2 {
+  font-size: 35px;
+  color: white;
+  margin-bottom: 20px;
+}
+#contactformcontainer label {
+  color: white;
+
+  font-weight: bold;
+}
+#contactformcontainer input {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0 20px 0;
+}
+#contactformcontainer textarea {
+  width: 100%;
+  height: 150px;
+  margin: 20px 0 20px 0;
+  resize: none;
+}
+#subbut {
+  background-color: rgb(9, 255, 9);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+}
+#iconsdiv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 580px;
+  height: 300px;
+  padding: 20px 20px 20px 30px;
+}
+#locationsdiv {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+
+  transform: translate(-50%, -50%);
+}
+#locationsdiv img {
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+#iconsdiv label {
+  color: white;
+  margin-left: 15px;
+  font-size: 20px;
+}
+#socialicondiv {
+  position: absolute;
+  left: 50%;
+  top: 300px;
+
+  transform: translate(-50%);
+}
+
+#socialicondiv img {
+  margin: 5px;
+}
+#socialicondiv img:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+#copyrightdiv {
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  top: 485px;
+  background-color: white;
+  z-index: 20;
+}
+#copyrightdiv h6 {
+  font-size: 15px;
+  text-align: center;
+}
+@media screen and (max-width: 1395px) {
+  #footerdiv {
+    top: 3600px;
+  }
+}
+#linktable {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 0;
+  top: 100px;
+}
+#linktable table {
+  border-left: 3px solid white;
+  padding-left: 30px;
+}
+#linktable table tr {
+  margin: 0;
+}
+#linktable table tr a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+#linktable table tr a:hover {
+  color: rgb(2, 250, 2);
+}
+@media screen and (max-width: 1100px) {
+  #footerdiv {
+    height: 1000px;
+  }
+  #copyrightdiv {
+    top: 985px;
+  }
+  #iconsdiv {
+    top: 700px;
+  }
+}
+@media screen and (max-width: 660px) {
+  #footerdiv {
+    height: 1400px;
+  }
+  #copyrightdiv {
+    top: 1385px;
+  }
+  #linktable {
+    top: 1000px;
+    left: 50%;
+
+    transform: translate(-50%);
+  }
+  #linktable table {
+    border: none;
+  }
+  #linktable table tr th {
+    text-align: center;
+  }
+  #contactformcontainer {
+    left: 50%;
+
+    transform: translate(-50%);
+  }
+}
+@media screen and (max-width: 925px) {
+  #footerdiv {
+    top: 6080px;
+  }
+}
+@media screen and (max-width: 470px) {
+  #footerdiv {
+    top: 5700px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #contactformcontainer {
+    padding: 10px;
+  }
+}
