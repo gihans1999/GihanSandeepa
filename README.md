@@ -1,2 +1,0 @@
-# GihanSandeepa
-SandeepaPortpolio
